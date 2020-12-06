@@ -180,11 +180,13 @@ export default function Navbar({ allCategories }) {
 					</ul>
 
 					<ul className="py-4 pl-2 mt-2 mx-2 border-b-2 border-white">
-						<a href="https://networkershome.com/contact">
+					<Link href="/contact">
+						<a >
 							<li className="pl-3 py-2 text-white text-md hover:opacity-75 cursor-pointer uppercase font-bold">
 								Contact
 							</li>
 						</a>
+						</Link>
 					</ul>
 				</div>
 			)}
