@@ -1,0 +1,48 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+body {
+	font-family: 'Lato', sans-serif;
+	padding-top: 60px;
+}
+
+.bg-gradient {
+	background-color: #123b74;
+	background-image: linear-gradient(135deg, #123b74 0%, #136ee8 100%);
+}
+
+/* Navbar */
+
+  /* since nested groupes are not supported we have to use 
+     regular css for the nested dropdowns 
+  */
+  .main-nav li>ul                 { transform: translatex(100%) scale(0) }
+  .main-nav li:hover>ul           { transform: translatex(101%) scale(1) }
+  .main-nav li > button svg       { transform: rotate(-90deg) }
+  .main-nav li:hover > button svg { transform: rotate(-270deg) }
+
+  /* Below styles fake what can be achieved with the tailwind config
+     you need to add the group-hover variant to scale and define your custom
+     min width style.
+  	 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+  	 for implementation with config file
+  */
+  .main-nav .group:hover .group-hover\:scale-100 { transform: scale(1) }
+  .main-nav .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+  .main-nav .scale-0 { transform: scale(0) }
+  .main-nav .min-w-32 { min-width: 8rem }
+
+  .header-spacer {
+     @apply py-8;
+  }
+
+  .bg-hero {
+     background: url('/assets/hero-bg.png');
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-position: center right;
+  }
+
