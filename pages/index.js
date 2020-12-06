@@ -15,7 +15,7 @@ export default function Index() {
 					<div className="grid sm:grid-cols-2 col-gap-8 row-gap-16 pb-16">
 						<div>
 							<div className="sm:text-center lg:text-left">
-								<h3 className="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-lg sm:leading-none captilaize mb-4 uppercase">
+								<h3 className="text-lg tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none captilaize mb-4 uppercase">
 									Your Vision Brought To Life.
 								</h3>
 								<h1 className="text-4xl leading-snug font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -41,8 +41,8 @@ export default function Index() {
 								</div>
 							</div>
 						</div>
-						<div className="sm:px-16 relative">
-							<div className="h-64 w-full rounded bg-gray relative flex items-center justify-center">
+						<div className="relative">
+							<div className="h-64 sm:h-full w-full rounded bg-gray relative flex items-center justify-center bg-hero-video">
 								<div className="rounded-full h-16 w-16 bg-primary flex items-center justify-center text-white">
 									<span className="fa-stack fa-lg ml-1 cursor-pointer">
 										<i className="fa fa-play fa-stack-1x"></i>
@@ -55,7 +55,7 @@ export default function Index() {
 			</section>
 
 			<section className="py-12 bg-white">
-				<div className="container px-4 mx-auto px-4">
+				<Container>
 					<h1 className="text-4xl leading-snug font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
 						If you can
 						<span className="text-primary"> Imagine</span> it, we can
@@ -69,7 +69,7 @@ export default function Index() {
 					<ul className="grid md:grid-cols-3 col-gap-8 row-gap-10 mt-8">
 						<li>
 							<div className="flex">
-								<div className="ml-4 md:mt-3">
+								<div className="md:mt-3">
 									<h3 className="text-2xl leading-6 font-bold">Feature 1</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
@@ -80,8 +80,8 @@ export default function Index() {
 						</li>
 						<li>
 							<div className="flex">
-								<div className="ml-4 md:mt-3">
-									<h3 className="text-lg leading-6 font-bold">Feature 2 </h3>
+								<div className="md:mt-3">
+									<h3 className="text-2xl leading-6 font-bold">Feature 2 </h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -91,8 +91,8 @@ export default function Index() {
 						</li>
 						<li>
 							<div className="flex">
-								<div className="ml-4 md:mt-3">
-									<h3 className="text-lg leading-6 font-bold">Feature 3</h3>
+								<div className="md:mt-3">
+									<h3 className="text-2xl leading-6 font-bold">Feature 3</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -102,8 +102,8 @@ export default function Index() {
 						</li>
 						<li>
 							<div className="flex">
-								<div className="ml-4 md:mt-3">
-									<h3 className="text-lg leading-6 font-bold">Feature 4</h3>
+								<div className="md:mt-3">
+									<h3 className="text-2xl leading-6 font-bold">Feature 4</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -113,8 +113,8 @@ export default function Index() {
 						</li>
 						<li>
 							<div className="flex">
-								<div className="ml-4 md:mt-3">
-									<h3 className="text-lg leading-6 font-bold">Feature 5 </h3>
+								<div className="md:mt-3">
+									<h3 className="text-2xl leading-6 font-bold">Feature 5 </h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -124,8 +124,8 @@ export default function Index() {
 						</li>
 						<li>
 							<div className="flex">
-								<div className="ml-4 md:mt-3">
-									<h3 className="text-lg leading-6 font-bold">Feature 6</h3>
+								<div className="md:mt-3">
+									<h3 className="text-2xl leading-6 font-bold">Feature 6</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -134,7 +134,7 @@ export default function Index() {
 							</div>
 						</li>
 					</ul>
-				</div>
+				</Container>
 			</section>
 
 			<section className="py-12 bg-primary">
@@ -395,40 +395,45 @@ export default function Index() {
 				</div>
 			</section>
 
-			<section className="bg-primary relative pb-24">
-				<div className="max-w-3xl bg-white mx-auto ">
-					<div className="max-w-3xl h-auto bg-white shadow-lg mx-auto transform rotate-3 p-8">
-						<img
-							src="/assets/iocn-high-five.svg"
-							alt="Hand Icon"
-							className="w-12 h-12 -mt-16 mx-auto mb-8"
-						/>
-						<h2 className="text-4xl tracking-tight leading-10 font-extrabold text-black text-left sm:text-3xl sm:leading-none md:text-5xl mb-4 transform -rotate-3">
-							Great Website can enhance your brand image
-						</h2>
-						<p className="mt-4 text-lg text-grey leading-7 text-black mb-12 transform -rotate-3">
-							We are a one-stop shop for all types of Software related activities.Here are a couple
-							of services,we offer
-						</p>
-						<ul className="mt-6 list-disc ml-8 text-primary transform -rotate-3">
-							<li className="py-2 text-secondary">hello</li>
-							<li className="py-2 text-secondary">hello</li>
-							<li className="py-2 text-secondary">hello</li>
-							<li className="py-2 text-secondary">hello</li>
-							<li className="py-2 text-secondary">hello</li>
-						</ul>
+			<section className="bg-primary relative pb-24 px-4">
+				<Container>
+					<div className="max-w-3xl bg-white mx-auto ">
+						<div className="max-w-3xl h-auto bg-white shadow-lg mx-auto transform rotate-3 p-8">
+							<img
+								src="/assets/iocn-high-five.svg"
+								alt="Hand Icon"
+								className="w-12 h-12 -mt-16 mx-auto mb-8"
+							/>
+							<h2 className="text-4xl tracking-tight leading-10 font-extrabold text-black text-left sm:text-3xl sm:leading-none md:text-5xl mb-4 transform -rotate-3">
+								Great Website can enhance your brand image
+							</h2>
+							<p className="mt-4 text-lg text-grey leading-7 text-black mb-12 transform -rotate-3">
+								We are a one-stop shop for all types of Software related activities.Here are a
+								couple of services,we offer
+							</p>
+							<ul className="mt-6 list-disc ml-8 text-primary transform -rotate-3">
+								<li className="py-2 text-secondary">Capture attention</li>
+								<li className="py-2 text-secondary">Establish credibility</li>
+								<li className="py-2 text-secondary">Build trust</li>
+								<li className="py-2 text-secondary">Engage users</li>
+								<li className="py-2 text-secondary">Support customers</li>
+								<li className="py-2 text-secondary">Generate leads</li>
+								<li className="py-2 text-secondary">Close sales</li>
+								<li className="py-2 text-secondary">Increase your bottom line </li>
+							</ul>
 
-						<div className="mt-5 sm:mt-8 sm:flex transform -rotate-3 pb-8 ml-4">
-							<div className="rounded-md shadow">
-								<Link href="/contact-us">
-									<a className="mx-auto w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-secondary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-sm md:px-10">
-										Learn More
-									</a>
-								</Link>
+							<div className="mt-5 sm:mt-8 sm:flex transform -rotate-3 pb-8 ml-4">
+								<div className="rounded-md shadow">
+									<Link href="/contact-us">
+										<a className="mx-auto w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-secondary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-sm md:px-10">
+											Learn More
+										</a>
+									</Link>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</Container>
 			</section>
 
 			<section className="py-12">
@@ -454,7 +459,7 @@ export default function Index() {
 								</p>
 							</div>
 						</li>
-            <li>
+						<li>
 							<div className="card rounded-lg shadow-lg flex flex-col">
 								<LazyLoad>
 									<img
@@ -471,7 +476,7 @@ export default function Index() {
 								</p>
 							</div>
 						</li>
-            <li>
+						<li>
 							<div className="card rounded-lg shadow-lg flex flex-col">
 								<LazyLoad>
 									<img
@@ -492,19 +497,22 @@ export default function Index() {
 				</div>
 			</section>
 
-      <section className="py-12 bg-white">
+			<section className="py-12 bg-white">
 				<div className="container px-4 mx-auto px-4">
-        <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-black text-center sm:text-3xl sm:leading-none md:text-5xl mb-4">
+					<h2 className="text-4xl tracking-tight leading-10 font-extrabold text-black text-center sm:text-3xl sm:leading-none md:text-5xl mb-4">
 						You Ask -- We Tell
 					</h2>
 					<p className="mt-4 text-lg text-center leading-7 text-grey mb-12 mx-auto max-w-md">
-          Musas sunt boreass de varius elevatus. Ferox, camerarius homos inciviliter resuscitabo de talis, bassus mens.
+						Musas sunt boreass de varius elevatus. Ferox, camerarius homos inciviliter resuscitabo
+						de talis, bassus mens.
 					</p>
 					<ul className="grid sm:grid-cols-2 col-gap-8 row-gap-10 mt-8 max-w-3xl mx-auto">
 						<li>
 							<div className="flex">
 								<div className="ml-4 md:mt-3">
-									<h3 className="text-2xl leading-6 font-bold text-secondary">What is Unicorn Platform?</h3>
+									<h3 className="text-2xl leading-6 font-bold text-secondary">
+										What is Unicorn Platform?
+									</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -515,7 +523,9 @@ export default function Index() {
 						<li>
 							<div className="flex">
 								<div className="ml-4 md:mt-3">
-									<h3 className="text-2xl leading-6 font-bold text-secondary">What is Unicorn Platform?</h3>
+									<h3 className="text-2xl leading-6 font-bold text-secondary">
+										What is Unicorn Platform?
+									</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -526,7 +536,9 @@ export default function Index() {
 						<li>
 							<div className="flex">
 								<div className="ml-4 md:mt-3">
-									<h3 className="text-2xl leading-6 font-bold text-secondary">What is Unicorn Platform?</h3>
+									<h3 className="text-2xl leading-6 font-bold text-secondary">
+										What is Unicorn Platform?
+									</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.
@@ -537,7 +549,9 @@ export default function Index() {
 						<li>
 							<div className="flex">
 								<div className="ml-4 md:mt-3">
-									<h3 className="text-2xl leading-6 font-bold text-secondary">What is Unicorn Platform?</h3>
+									<h3 className="text-2xl leading-6 font-bold text-secondary">
+										What is Unicorn Platform?
+									</h3>
 									<p className="mt-4 text-sm text-left leading-7 text-grey max-w-4xl">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quaerat facilis
 										temporibus ex, explicabo commodi. Ipsum ducimus deserunt repellat corporis.

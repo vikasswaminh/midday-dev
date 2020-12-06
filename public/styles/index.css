@@ -46,3 +46,10 @@ body {
      background-position: center right;
   }
 
+  .bg-hero-video {
+   background: url('/assets/success.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+  }
+

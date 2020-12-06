@@ -6,7 +6,7 @@ const Footer = ({ placementProgramMenu, ciscoMenu, multivendorMenu, cloudMenu })
           <div className="sm:flex justify-center mb-4">
             <div className="sm:w-1/4 h-auto">
               <div className="text-secondary mb-2 text-2xl font-bold">
-              <img src="/assets/logo.png" alt="Logo" className="w-64 h-full"/>
+              <img src="/assets/logo.png" alt="Logo" className="w-32 h-full"/>
               </div>
             </div>
             <div className="sm:w-1/4 h-auto">
@@ -40,7 +40,7 @@ const Footer = ({ placementProgramMenu, ciscoMenu, multivendorMenu, cloudMenu })
         </div>
       </footer>
 
-      <div className="py-8 px-12 bg-primary text-white flex flex-col sm:flex-row justify-between items-center text-center text-xs sm:text-sm">
+      <div className="py-4 px-12 bg-primary text-white flex flex-col sm:flex-row justify-between items-center text-center text-xs sm:text-sm">
         <div className="flex mb-4 sm:mb-0">
           <div className="flex">
             <div className="flex-shrink-0">

@@ -12,7 +12,7 @@ export default function Navbar({ allCategories }) {
 				>
 					<div className="logo">
 						<a href="/">
-							<img src="/assets/logo.png" alt="Logo" className="w-64 h-full" />
+							<img src="/assets/logo.png" alt="Logo" className="w-32 h-full" />
 						</a>
 					</div>
 					<div className="nav-items justify-end mr-4 hidden lg:flex">
