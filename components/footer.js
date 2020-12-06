@@ -40,7 +40,7 @@ const Footer = ({ placementProgramMenu, ciscoMenu, multivendorMenu, cloudMenu })
         </div>
       </footer>
 
-      <div className="py-4 px-12 bg-primary text-white flex flex-col sm:flex-row justify-between items-center text-center text-xs sm:text-sm">
+      <div className="py-2 px-12 bg-primary text-white flex flex-col sm:flex-row justify-between items-center text-center text-xs sm:text-sm">
         <div className="flex mb-4 sm:mb-0">
           <div className="flex">
             <div className="flex-shrink-0">

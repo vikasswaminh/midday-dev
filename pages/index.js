@@ -32,7 +32,7 @@ export default function Index() {
 								</p>
 								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 									<div className="rounded-md shadow">
-										<Link href="/contact-us">
+										<Link href="/web-design-development">
 											<a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white  bg-black hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-lg md:px-10">
 												Get Started
 											</a>
@@ -293,7 +293,7 @@ export default function Index() {
 								</p>
 								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
 									<div className="rounded-md shadow">
-										<Link href="/contact-us">
+										<Link href="/web-design-development">
 											<a className="mx-auto w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-secondary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-sm md:px-10">
 												Learn More
 											</a>
@@ -323,7 +323,7 @@ export default function Index() {
 								</p>
 								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
 									<div className="rounded-md shadow">
-										<Link href="/contact-us">
+										<Link href="/web-design-development">
 											<a className="mx-auto w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-secondary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-sm md:px-10">
 												Learn More
 											</a>
@@ -353,7 +353,7 @@ export default function Index() {
 								</p>
 								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
 									<div className="rounded-md shadow">
-										<Link href="/contact-us">
+										<Link href="/web-design-development">
 											<a className="mx-auto w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-secondary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-sm md:px-10">
 												Learn More
 											</a>
@@ -382,7 +382,7 @@ export default function Index() {
 								</p>
 								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
 									<div className="rounded-md shadow">
-										<Link href="/contact-us">
+										<Link href="/web-design-development">
 											<a className="mx-auto w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-secondary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-sm md:px-10">
 												Learn More
 											</a>
@@ -424,7 +424,7 @@ export default function Index() {
 
 							<div className="mt-5 sm:mt-8 sm:flex transform -rotate-3 pb-8 ml-4">
 								<div className="rounded-md shadow">
-									<Link href="/contact-us">
+									<Link href="/digital-marketing">
 										<a className="mx-auto w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-secondary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-sm md:px-10">
 											Learn More
 										</a>
@@ -442,57 +442,63 @@ export default function Index() {
 						Our Blogs
 					</h2>
 					<ul className="grid md:grid-cols-3 col-gap-8 row-gap-10">
-						<li>
-							<div className="card rounded-lg shadow-lg flex flex-col">
-								<LazyLoad>
-									<img
-										src="/assets/blog-1.jpg"
-										alt="Top instructors in networkers home"
-										className="w-full rounded-md rounded-br-none rounded-bl-none h-64 w-full object-cover"
-									/>
-								</LazyLoad>
-								<h2 className="text-2xl tracking-tight leading-10 font-extrabold text-black pt-4 text-left px-4 sm:text-5xl sm:leading-none md:text-3xl">
-									How to Be More Creative: 10 Actionable Tips
-								</h2>
-								<p className="p-4 text-base text-grey text-left sm:text-lg sm:max-w-xl lg:text-xl">
-									Read the story in our company blog.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div className="card rounded-lg shadow-lg flex flex-col">
-								<LazyLoad>
-									<img
-										src="/assets/blog-2.jpg"
-										alt="Top instructors in networkers home"
-										className="w-full rounded-md rounded-br-none rounded-bl-none h-64 w-full object-cover"
-									/>
-								</LazyLoad>
-								<h2 className="text-2xl tracking-tight leading-10 font-extrabold text-black pt-4 text-left px-4 sm:text-5xl sm:leading-none md:text-3xl">
-									How to Be More Creative: 10 Actionable Tips
-								</h2>
-								<p className="p-4 text-base text-grey text-left sm:text-lg sm:max-w-xl lg:text-xl">
-									Read the story in our company blog.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div className="card rounded-lg shadow-lg flex flex-col">
-								<LazyLoad>
-									<img
-										src="/assets/blog-3.jpg"
-										alt="Top instructors in networkers home"
-										className="w-full rounded-md rounded-br-none rounded-bl-none h-64 w-full object-cover"
-									/>
-								</LazyLoad>
-								<h2 className="text-2xl tracking-tight leading-10 font-extrabold text-black pt-4 text-left px-4 sm:text-5xl sm:leading-none md:text-3xl">
-									How to Be More Creative: 10 Actionable Tips
-								</h2>
-								<p className="p-4 text-base text-grey text-left sm:text-lg sm:max-w-xl lg:text-xl">
-									Read the story in our company blog.
-								</p>
-							</div>
-						</li>
+						<Link href="/blog-detail-1">
+							<li>
+								<div className="card rounded-lg shadow-lg flex flex-col cursor-pointer">
+									<LazyLoad>
+										<img
+											src="/assets/blog-1.jpg"
+											alt="Blog"
+											className="w-full rounded-md rounded-br-none rounded-bl-none h-64 w-full object-cover"
+										/>
+									</LazyLoad>
+									<h2 className="text-2xl tracking-tight leading-10 font-extrabold text-black pt-4 text-left px-4 sm:text-5xl sm:leading-none md:text-3xl">
+										How to Be More Creative: 10 Actionable Tips
+									</h2>
+									<p className="p-4 text-base text-grey text-left sm:text-lg sm:max-w-xl lg:text-xl">
+										Read the story in our company blog.
+									</p>
+								</div>
+							</li>
+						</Link>
+						<Link href="/blog-detail-1">
+							<li>
+								<div className="card rounded-lg shadow-lg flex flex-col cursor-pointer">
+									<LazyLoad>
+										<img
+											src="/assets/blog-2.jpg"
+											alt="Blog"
+											className="w-full rounded-md rounded-br-none rounded-bl-none h-64 w-full object-cover"
+										/>
+									</LazyLoad>
+									<h2 className="text-2xl tracking-tight leading-10 font-extrabold text-black pt-4 text-left px-4 sm:text-5xl sm:leading-none md:text-3xl">
+										How to Be More Creative: 10 Actionable Tips
+									</h2>
+									<p className="p-4 text-base text-grey text-left sm:text-lg sm:max-w-xl lg:text-xl">
+										Read the story in our company blog.
+									</p>
+								</div>
+							</li>
+						</Link>
+						<Link href="/blog-detail-1">
+							<li>
+								<div className="card rounded-lg shadow-lg flex flex-col cursor-pointer">
+									<LazyLoad>
+										<img
+											src="/assets/blog-3.jpg"
+											alt="Blog"
+											className="w-full rounded-md rounded-br-none rounded-bl-none h-64 w-full object-cover"
+										/>
+									</LazyLoad>
+									<h2 className="text-2xl tracking-tight leading-10 font-extrabold text-black pt-4 text-left px-4 sm:text-5xl sm:leading-none md:text-3xl">
+										How to Be More Creative: 10 Actionable Tips
+									</h2>
+									<p className="p-4 text-base text-grey text-left sm:text-lg sm:max-w-xl lg:text-xl">
+										Read the story in our company blog.
+									</p>
+								</div>
+							</li>
+						</Link>
 					</ul>
 				</div>
 			</section>

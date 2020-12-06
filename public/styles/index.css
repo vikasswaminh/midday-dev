@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
 	padding-top: 60px;
 }
 
@@ -16,40 +16,244 @@ body {
 
 /* Navbar */
 
-  /* since nested groupes are not supported we have to use 
+/* since nested groupes are not supported we have to use 
      regular css for the nested dropdowns 
   */
-  .main-nav li>ul                 { transform: translatex(100%) scale(0) }
-  .main-nav li:hover>ul           { transform: translatex(101%) scale(1) }
-  .main-nav li > button svg       { transform: rotate(-90deg) }
-  .main-nav li:hover > button svg { transform: rotate(-270deg) }
+.main-nav li > ul {
+	transform: translatex(100%) scale(0);
+}
+.main-nav li:hover > ul {
+	transform: translatex(101%) scale(1);
+}
+.main-nav li > button svg {
+	transform: rotate(-90deg);
+}
+.main-nav li:hover > button svg {
+	transform: rotate(-270deg);
+}
 
-  /* Below styles fake what can be achieved with the tailwind config
+/* Below styles fake what can be achieved with the tailwind config
      you need to add the group-hover variant to scale and define your custom
      min width style.
   	 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
   	 for implementation with config file
   */
-  .main-nav .group:hover .group-hover\:scale-100 { transform: scale(1) }
-  .main-nav .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
-  .main-nav .scale-0 { transform: scale(0) }
-  .main-nav .min-w-32 { min-width: 8rem }
+.main-nav .group:hover .group-hover\:scale-100 {
+	transform: scale(1);
+}
+.main-nav .group:hover .group-hover\:-rotate-180 {
+	transform: rotate(180deg);
+}
+.main-nav .scale-0 {
+	transform: scale(0);
+}
+.main-nav .min-w-32 {
+	min-width: 8rem;
+}
 
-  .header-spacer {
-     @apply py-8;
-  }
+.header-spacer {
+	@apply py-8;
+}
 
-  .bg-hero {
-     background: url('/assets/hero-bg.png');
-     background-repeat: no-repeat;
-     background-size: 50%;
-     background-position: center right;
-  }
+.bg-hero {
+	background: url("/assets/hero-bg.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center right;
+}
 
-  .bg-hero-video {
-   background: url('/assets/success.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-  }
+.bg-hero-video {
+	background: url("/assets/success.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
 
+.bg-hero-about {
+	background: url("/assets/about-hero.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.bg-hero-marketing {
+	background: url("/assets/bg-hero-marketing.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#conference-timeline {
+	position: relative;
+	max-width: 920px;
+	width: 100%;
+	margin: 0 auto;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+	display: table;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding: 15px 23px;
+	color: #fff;
+	max-width: 5%;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+#conference-timeline .conference-center-line {
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	margin-left: -2px;
+	z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+	padding-top: 67px;
+	padding-bottom: 67px;
+}
+.timeline-article {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 20px 0;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+	max-width: 44%;
+	width: 100%;
+}
+.timeline-article .timeline-author {
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #242424;
+	text-align: right;
+}
+.timeline-article .content-left,
+.timeline-article .content-right {
+	position: relative;
+	width: auto;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+	padding: 27px 25px;
+}
+.timeline-article p {
+	margin: 0 0 0 60px;
+	padding: 0;
+	font-weight: 400;
+	color: #242424;
+	font-size: 14px;
+	line-height: 24px;
+	position: relative;
+}
+.timeline-article p span.article-number {
+	position: absolute;
+	font-weight: 300;
+	font-size: 44px;
+	top: 10px;
+	left: -60px;
+	color: #00b0bd;
+}
+.timeline-article .content-left-container {
+	float: left;
+}
+.timeline-article .content-right-container {
+	float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before {
+	position: absolute;
+	top: 20px;
+	font-size: 23px;
+	font-family: "FontAwesome";
+	color: #fff;
+}
+.timeline-article .content-left:before {
+	content: "\f0da";
+	right: -8px;
+}
+.timeline-article .content-right:before {
+	content: "\f0d9";
+	left: -8px;
+}
+.timeline-article .meta-date {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	color: #fff;
+	border-radius: 100%;
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+	text-align: center;
+	font-weight: 900;
+}
+
+.toggle-checkbox:checked {
+	@apply: right-0 border-primary;
+	right: 0;
+	border-color: red;
+}
+.toggle-checkbox:checked + .toggle-label {
+	@apply: bg-primary;
+	background-color: red;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+	#conference-timeline .timeline-start,
+	#conference-timeline .timeline-end {
+		margin: 0;
+	}
+	#conference-timeline .conference-center-line {
+		margin-left: 0;
+		left: 50px;
+	}
+	.timeline-article .meta-date {
+		margin-left: 0;
+		left: 36px;
+	}
+	.timeline-article .content-left-container,
+	.timeline-article .content-right-container {
+		max-width: 100%;
+		width: auto;
+		float: none;
+		margin-left: 110px;
+		min-height: 53px;
+	}
+	.timeline-article .content-left-container {
+		margin-bottom: 20px;
+	}
+	.timeline-article .content-left,
+	.timeline-article .content-right {
+		padding: 10px 25px;
+		min-height: 65px;
+	}
+	.timeline-article .content-left:before {
+		content: "\f0d9";
+		right: auto;
+		left: -8px;
+	}
+	.timeline-article .content-right:before {
+		display: none;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.timeline-article p {
+		margin: 0;
+	}
+	.timeline-article p span.article-number {
+		display: none;
+	}
+}
