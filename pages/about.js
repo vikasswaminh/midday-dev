@@ -21,14 +21,14 @@ export default function About() {
 									and hackers. Try it for free.
 								</p>
 								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-									<div className="rounded-md shadow">
+									<div className="rounded-md">
 										<Link href="/contact-us">
 											<a className="w-full mb-4 flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white bg-primary hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-lg md:px-10">
 												Get Started
 											</a>
 										</Link>
 									</div>
-									<div className="rounded-md shadow md:ml-4">
+									<div className="rounded-md md:ml-4">
 										<Link href="/web-design-development">
 											<a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-black border-2 border-black bg-white hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-lg md:px-10">
 												Learn More
