@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Container from "../components/Container";
-import Link from "next/link";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
 	return (
@@ -70,88 +69,7 @@ export default function Contact() {
 						</div>
 						{/* Col */}
 						<div className="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
-							<h3 className="pt-4 text-2xl text-center">Send A Message! </h3>
-							<form className="px-8 pt-6 pb-8 mb-4 bg-white rounded">
-								<div className="mb-4">
-									<label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
-										Full Name
-									</label>
-									<input
-										className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border-grey border border-grey rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-										id="text"
-										type="text"
-										placeholder="Full Name"
-									/>
-								</div>
-
-								<div className="mb-4 md:grid md:grid-cols-2">
-									<div className="mb-4 md:mr-2 md:mb-0">
-										<label
-											className="block mb-2 text-sm font-bold text-gray-700"
-											htmlFor="firstName"
-										>
-											Phone
-										</label>
-										<input
-											className="w-full px-3 py-2 text-sm leading-tight text-gray-700 border-grey border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-											id="phone"
-											type="number"
-											placeholder="Phone"
-										/>
-									</div>
-									<div className="md:ml-2">
-										<label
-											className="block mb-2 text-sm font-bold text-gray-700"
-											htmlFor="lastName"
-										>
-											Email
-										</label>
-										<input
-											className="w-full px-3 py-2 text-sm leading-tight text-gray-700 border-grey border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-											id="email"
-											type="text"
-											placeholder="Email"
-										/>
-									</div>
-								</div>
-								<div className="mb-4">
-									<label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
-										Message
-									</label>
-									<textarea
-										className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border-grey border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-										id="message"
-										type="text"
-										placeholder="Message"
-									/>
-								</div>
-								<div>
-									<div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
-										<input
-											type="checkbox"
-											name="toggle"
-											id="toggle"
-											className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-										/>
-										<label
-											htmlFor="toggle"
-											className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-										/>
-									</div>
-									<label htmlFor="toggle" className="text-xs text-gray-700">
-										Accept terms and conditions.
-									</label>
-								</div>
-								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-									<div className="rounded-md shadow">
-										<Link href="/contact-us">
-											<a className="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base leading-6 font-bold uppercase rounded-md text-white  bg-black hover:opacity-75 transition duration-150 ease-in-out md:py-3 md:text-lg md:px-10">
-												Submit
-											</a>
-										</Link>
-									</div>
-								</div>
-							</form>
+							<ContactForm />
 						</div>
 					</div>
 				</div>

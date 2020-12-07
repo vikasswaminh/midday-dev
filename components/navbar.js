@@ -29,19 +29,6 @@ export default function Navbar({ allCategories }) {
 								</button>
 							</div>
 						</div>
-						<div className="nav-item mr-2 text-sm text-primary hover:opacity-75 cursor-pointer font-bold">
-							<div className="group inline-block">
-								<button className="outline-none focus:outline-none px-3 py-2 bg-white rounded-sm flex items-center">
-									<Link href="/about">
-										<a>
-											<span className="pr-1 font-semibold flex-1 text-sm uppercase cursor-pointer font-bold uppercase">
-												About
-											</span>
-										</a>
-									</Link>
-								</button>
-							</div>
-						</div>
 						<div className="nav-item mr-2 text-sm text-primary cursor-pointer font-bold">
 							<div className="group inline-block">
 								<button className="outline-none focus:outline-none px-3 py-2 bg-white rounded-sm flex items-center">
@@ -74,6 +61,19 @@ export default function Navbar({ allCategories }) {
 										</a>
 									</Link>
 								</ul>
+							</div>
+						</div>
+						<div className="nav-item mr-2 text-sm text-primary hover:opacity-75 cursor-pointer font-bold">
+							<div className="group inline-block">
+								<button className="outline-none focus:outline-none px-3 py-2 bg-white rounded-sm flex items-center">
+									<Link href="/about">
+										<a>
+											<span className="pr-1 font-semibold flex-1 text-sm uppercase cursor-pointer font-bold uppercase">
+												About
+											</span>
+										</a>
+									</Link>
+								</button>
 							</div>
 						</div>
 						<div className="nav-item mr-2 text-sm text-primary hover:opacity-75 cursor-pointer font-bold">
@@ -146,14 +146,6 @@ export default function Navbar({ allCategories }) {
 					</ul>
 
 					<ul className="py-4 pl-2 mt-2 mx-2 border-b-2 border-white">
-						<Link href="/about">
-							<a>
-								<li className="pl-3 py-2 text-white text-md uppercase font-bold">About</li>
-							</a>
-						</Link>
-					</ul>
-
-					<ul className="py-4 pl-2 mt-2 mx-2 border-b-2 border-white">
 						<li className="pl-3 py-2 text-white text-md uppercase font-bold">Primary Services</li>
 						<Link href="/web-design-development">
 							<a>
@@ -171,7 +163,15 @@ export default function Navbar({ allCategories }) {
 						</Link>
 					</ul>
 
-          <ul className="py-4 pl-2 mt-2 mx-2 border-b-2 border-white">
+					<ul className="py-4 pl-2 mt-2 mx-2 border-b-2 border-white">
+						<Link href="/about">
+							<a>
+								<li className="pl-3 py-2 text-white text-md uppercase font-bold">About</li>
+							</a>
+						</Link>
+					</ul>
+
+					<ul className="py-4 pl-2 mt-2 mx-2 border-b-2 border-white">
 						<Link href="/blog">
 							<a>
 								<li className="pl-3 py-2 text-white text-md uppercase font-bold">Blog</li>
@@ -180,12 +180,12 @@ export default function Navbar({ allCategories }) {
 					</ul>
 
 					<ul className="py-4 pl-2 mt-2 mx-2 border-b-2 border-white">
-					<Link href="/contact">
-						<a >
-							<li className="pl-3 py-2 text-white text-md hover:opacity-75 cursor-pointer uppercase font-bold">
-								Contact
-							</li>
-						</a>
+						<Link href="/contact">
+							<a>
+								<li className="pl-3 py-2 text-white text-md hover:opacity-75 cursor-pointer uppercase font-bold">
+									Contact
+								</li>
+							</a>
 						</Link>
 					</ul>
 				</div>

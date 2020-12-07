@@ -7,7 +7,7 @@ export default function BlogDetail1() {
 	return (
 		<>
 			<Head>
-				<title>Blog Detail 1 | Midday</title>
+				<title>Blog Detail | Midday</title>
 			</Head>
 			<section className="py-12">
 				<div className="container px-4 mx-auto px-4">

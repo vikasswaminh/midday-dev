@@ -10,7 +10,7 @@ export default function Index() {
 				<title>Midday Dev</title>
 			</Head>
 
-			<section className="bg-hero w-full py-16 sm:py-40">
+			<section className="bg-hero w-full py-12 sm:py-16">
 				<Container>
 					<div className="grid sm:grid-cols-2 col-gap-8 row-gap-16 pb-16">
 						<div>
@@ -54,7 +54,7 @@ export default function Index() {
 				</Container>
 			</section>
 
-			<section className="py-12 bg-white">
+			<section className="pb-12 bg-white">
 				<Container>
 					<h1 className="text-4xl leading-snug font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
 						If you can
